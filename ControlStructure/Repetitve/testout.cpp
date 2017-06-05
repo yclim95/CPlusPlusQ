@@ -39,17 +39,33 @@ int main()
       //Last Row
       else
       {
+        if (temp == 10)
+        {
+          temp = 9;
+        }
+        //Reverse
         // If j(3) == num(3)
         if (j >= point+1)
         {
           if (temp >= row)
           {
+            if (temp+1 == 10)
+            {
+              cout << 0;
+            }
             cout << temp--;
+
           }//END of While
         }//END of If
+
         else
         {
           cout << counter++;
+          //Reset temp = 0
+          if (counter >= 10)
+          {
+            counter = 0;
+          }
         }
       }//END of Else
 
